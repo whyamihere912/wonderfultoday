@@ -19,6 +19,7 @@
     "check:prettier": "prettier --check .",
     "fix": "npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint --fix .",
+    "format": "prettier --write .",
     "fix:prettier": "prettier -w ."
   },
   "dependencies": {
