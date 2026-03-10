@@ -11,6 +11,5 @@
   "yaml.schemas": {
     "./.vscode/astrowind/config-schema.json": "/src/config.yaml"
   },
-  "eslint.useFlatConfig": true,
-  "editor.formatOnSave": true
+  "eslint.useFlatConfig": true
 }
