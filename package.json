@@ -1,7 +1,7 @@
 {
   "name": "@onwidget/astrowind",
   "version": "1.0.0-beta.52",
-  "description": "AstroWind: A free template using Astro 5.0 and Tailwind CSS. Astro starter theme.",
+  "description": "Melissa",
   "type": "module",
   "private": true,
   "engines": {
@@ -19,7 +19,6 @@
     "check:prettier": "prettier --check .",
     "fix": "npm run fix:eslint && npm run fix:prettier",
     "fix:eslint": "eslint --fix .",
-    "format": "prettier --write .",
     "fix:prettier": "prettier -w ."
   },
   "dependencies": {
