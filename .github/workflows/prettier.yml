@@ -1,12 +1,9 @@
-name: Format with Prettier
+name: Auto Format
 
-on:
-  push:
-    branches: [main]
-  pull_request:
+on: [push]
 
 jobs:
-  format:
+  prettier:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,7 +14,8 @@ jobs:
           node-version: 20
 
       - run: npm install
+      - run: npx prettier --write .
 
-      - run: npx prettier --check .
-          git commit -m "Apply Prettier formatting" || exit 0
-          git push
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Apply Prettier formatting"
