@@ -1,4 +1,3 @@
-
 ---
 import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
@@ -13,22 +12,24 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-   <Hero image={{ src: '~/assets/images/ubud.png', alt: 'ubud' }}>
-   <Fragment slot="title">
-     A place where Simon learns Web development inspired by <span class="text-accent dark:text-white"> Melissa </span>
-   </Fragment>
+  <Hero image={{ src: '~/assets/images/ubud.png', alt: 'ubud' }}>
+    <Fragment slot="title">
+      A place where Simon learns Web development inspired by <span class="text-accent dark:text-white"> Melissa </span>
+    </Fragment>
 
-   <Fragment slot="subtitle">
-     <span class="xs:inline"> Simon misses her Aura, Voice, Penny, warmth, love, boundless creativity, enthusiasm, beautiful brown eyes, smile,
-     Board Games, kiss, lips, hair, the way she says OMG, touch, story telling and laughter. </span>
-   </Fragment>
-   </Hero>
+    <Fragment slot="subtitle">
+      <span class="xs:inline">
+        Simon misses her Aura, Voice, Penny, warmth, love, boundless creativity, enthusiasm, beautiful brown eyes,
+        smile, Board Games, kiss, lips, hair, the way she says OMG, touch, story telling and laughter.
+      </span>
+    </Fragment>
+  </Hero>
 
   <!-- Stats Widget ****************** -->
   <Stats
     stats={[
       { title: 'Total Days', amount: '77' },
-      { title: 'Perfect Days', amount: '76.5' },  
+      { title: 'Perfect Days', amount: '76.5' },
     ]}
   />
 </Layout>
